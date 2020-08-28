@@ -1,0 +1,80 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+div[role=main] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive;
+}
+
+@keyframes marquee {
+  0% {
+    background: chartreuse;
+  }
+  50% {
+    background: rebeccapurple;
+  }
+  100% {
+    background: chartreuse;
+  }
+}
+marquee {
+  height: 200px;
+}
+marquee img {
+  height: 200px;
+}
+
+marquee + center svg {
+  transform: translateY(-120px);
+  display: block;
+  background-color: transparent;
+}
+
+img.gif {
+  height: 80px;
+}
+
+#messagesLog {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.firewall img {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+/*# sourceMappingURL=/client.80ee2152.css.map */
